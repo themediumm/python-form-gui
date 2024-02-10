@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'suii',
+        'NAME': 'pyform',
         'USER': 'root',
         'PASSWORD': 'Kushi@3641',
         'HOST': 'localhost',
