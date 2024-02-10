@@ -1,0 +1,15 @@
+<!-- myapp/templates/success_page.html -->
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Success!</h1>
+        <p>Your response has been submitted successfully.</p>
+        <a href="{% url 'user_info_form' %}">Submit Another Response</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- myapp/templates/user_info_form.html -->
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action="{% url 'user_info_form' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
